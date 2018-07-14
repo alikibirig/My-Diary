@@ -11,29 +11,9 @@
 	color:red; 
 	font-size: 3rem;
 }
-#login{
-	margin-left: 1150px;
-	position: absolute;
-	color: red;
-	text-decoration: none;
-	font-size: 1.5rem;
-}
-#signup{
-	margin-left: 1300px;
-	position: absolute;
-	color: red;
-	text-decoration: none;
-	font-size: 1.5rem;
-}
+
 body{background-color: lightblue;}
-#notes{
-	position: absolute;
-	width: 400px;
-	height: 200px;
-	background-color: white;
-	margin-top: 300px;
-	margin-left: 100px;
-}
+
 .compliments{
 	text-align: center;
 	font-size: 1.5rem;
@@ -66,6 +46,53 @@ body{background-color: lightblue;}
 	position: absolute;
 	background-color: inherit;
 }
-#contacts{ margin-left: 500px; margin-top: 100px; }
-#terms{ margin-left: 500px;  margin-top: 100px; }
-#aboutus{ margin-left: 100px;  margin-top: 100px; }
+#contacts{ 
+	margin-left: 500px; 
+	margin-top: 100px; 
+}
+#terms{ 
+	margin-left: 500px;  
+	margin-top: 100px; 
+}
+#aboutus{ 
+	margin-left: 100px;  
+	margin-top: 100px; 
+}
+#login{
+   	width: 300px;
+	height: auto;
+	background-color: rgb(200,200,200);
+	border-radius: 10px;
+	border:59px;
+	margin-left: 200px;
+	position: absolute;
+	margin-top: 300px;
+}
+.edit{ 
+	width: 13rem;
+	height: 1.7rem;
+	border-radius: 0.4rem; 
+	font-size: 1.5rem;
+	transition: box-shadow 1s ease;
+}
+.edit:hover{
+           box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem black;
+}
+#enter{
+	margin-left: 0px;
+	background-color: green;
+	border-radius: 5px;
+	width: 70px;
+	height: 30px;
+	cursor: pointer;
+}
+#forgot{
+   	text-decoration-line: none;
+		   }
+.holder{
+	margin-left: 40px;
+}
+h3{
+	text-align: center;
+	font-size: 1.3rem;
+}
