@@ -19,29 +19,31 @@ body{background-color: lightblue;}
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
-	margin-top: 450px;
+	margin-top: 350px;
 	margin-left: 900px;
 	position: absolute;
 }
 #text-area{
 	width: 700px;
 	height: 600px;
-	background-color: white;
+	background-color: lightcyan;
 	position: absolute;
 	margin-left: 0px;
 	margin-top: 250px;
+	border-radius: 5px;
 }
-#baselinks{
-	width: 101%;
-	height:100px;
-	margin-top: 900px;
-	margin-bottom: 0px;
-	position: absolute;
+#notes{
+	width: 300px;
+	height:400px;
+	margin-top: 600px;
+	margin-left: 900px;
 	background-color: inherit;
+	position: absolute;
+	text-align: center;
+	font-size: 1.2rem;
+	font-style: italic;
+	font-weight: 10px;
 }
-#contacts{ margin-left: 500px; margin-top: 100px; }
-#terms{ margin-left: 500px;  margin-top: 100px; }
-#aboutus{ margin-left: 100px;  margin-top: 100px; }
 #entry0{
 	margin-left: 1000px;
 	margin-top: -10px;
@@ -68,7 +70,7 @@ body{background-color: lightblue;}
 	position: absolute;
 	margin-left: 0px;
 	margin-top: 0px;
-	background-color: rgb(180,180,160);
+	background-color: lightcyan;
 	text-indent: 10px;
 
 }
@@ -81,8 +83,8 @@ body{background-color: lightblue;}
 	display: none;
 	position: absolute;
 	margin-left: 0px;
-	margin-top: 0px;
-	background-color: rgb(180,180,160);
+	margin-top: -0.2px;
+	background-color: lightcyan;
 	text-indent: 10px;
 }
 #content1 a{
@@ -95,7 +97,7 @@ body{background-color: lightblue;}
 	position: absolute;
 	margin-left: 0px;
 	margin-top: 0px;
-	background-color: rgb(180,180,160);
+	background-color: lightcyan;
 	text-indent: 10px;
 }
 #content2 a{
@@ -147,5 +149,4 @@ input{
 	margin-left: 500px;
 	width: 80px;
 	height: 40px;
-
 }
