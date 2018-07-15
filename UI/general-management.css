@@ -106,10 +106,12 @@ body{background-color: lightblue;}
 #entry0:hover
 #content{
 	display: block;
-}#entry1:hover
+}
+#entry1:hover
 #content1{
 	display: block;
-}#entry2:hover
+}
+#entry2:hover
 #content2{
 	display: block;
 }
@@ -149,4 +151,11 @@ input{
 	margin-left: 500px;
 	width: 80px;
 	height: 40px;
+}
+#mainbutton{
+	width: 80px;
+	height:40px;
+	margin-left: 900px;
+	margin-top: -10px;
+	position: absolute;
 }

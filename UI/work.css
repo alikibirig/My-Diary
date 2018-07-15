@@ -11,7 +11,9 @@
 	color:red; 
 	font-size: 3rem;
 }
-body{background-color: lightblue;}
+body{
+	background-color: lightblue;
+}
 #picture{
 	width: 300px;
 	height: 300px;
@@ -78,10 +80,12 @@ body{background-color: lightblue;}
 #entry0:hover
 #content{
 	display: block;
-}#entry1:hover
+}
+#entry1:hover
 #content1{
 	display: block;
-}#entry2:hover
+}
+#entry2:hover
 #content2{
 	display: block;
 }

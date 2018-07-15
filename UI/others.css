@@ -88,10 +88,12 @@ body{background-color: lightblue;}
 	text-decoration: none;
 }
 
-}#entry1:hover
+}
+#entry1:hover
 #content1{
 	display: block;
-}#entry2:hover
+}
+#entry2:hover
 #content2{
 	display: block;
 }

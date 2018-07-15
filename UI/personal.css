@@ -11,7 +11,9 @@
 	color:red; 
 	font-size: 3rem;
 }
-body{background-color: lightblue;}
+body{
+	background-color: lightblue;
+}
 #picture{
 	width: 300px;
 	height: 300px;
@@ -44,7 +46,6 @@ body{background-color: lightblue;}
 	font-style: italic;
 	font-weight: 10px;
 }
-
 #entry1{
 	margin-left: 1120px;
 	margin-top: -10px;
@@ -59,7 +60,6 @@ body{background-color: lightblue;}
 	width: 100px;
 	height: 40px;
 }
-
 #content1{
 	width: 100px;
 	height: auto;
@@ -89,10 +89,12 @@ body{background-color: lightblue;}
 #entry0:hover
 #content{
 	display: block;
-}#entry1:hover
+}
+#entry1:hover
 #content1{
 	display: block;
-}#entry2:hover
+}
+#entry2:hover
 #content2{
 	display: block;
 }
