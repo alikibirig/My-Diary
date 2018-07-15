@@ -72,7 +72,7 @@ body{background-color: lightblue;}
 	width: 13rem;
 	height: 1.7rem;
 	border-radius: 0.4rem; 
-	font-size: 1.5rem;
+	font-size: 1rem
 	transition: box-shadow 1s ease;
 }
 .edit:hover{
@@ -96,4 +96,11 @@ body{background-color: lightblue;}
 h3{
 	text-align: center;
 	font-size: 1.3rem;
+}
+#home{
+	margin-left: 1200px;
+	height: 40px;
+	width: 100px;
+	position: absolute;
+	margin-top: -10px;
 }
