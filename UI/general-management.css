@@ -26,7 +26,7 @@ body{background-color: lightblue;}
 #text-area{
 	width: 700px;
 	height: 600px;
-	background-color: lightcyan;
+	background-color: inherit;
 	position: absolute;
 	margin-left: 0px;
 	margin-top: 250px;
@@ -133,6 +133,7 @@ body{background-color: lightblue;}
 	width: auto;
 	height:auto;
 	position: absolute;
+
 }
 #textareacontent{
 	margin-left: 70px;
@@ -153,9 +154,15 @@ input{
 	height: 40px;
 }
 #mainbutton{
-	width: 80px;
+	width: 100px;
 	height:40px;
-	margin-left: 900px;
+	margin-left: 880px;
 	margin-top: -10px;
 	position: absolute;
+}
+#note{
+	font-size: 5rem;
+	color: red;
+	font-style: italic;
+	text-align: center;
 }

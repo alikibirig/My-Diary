@@ -80,13 +80,11 @@ body{background-color: lightblue;}
 }
 #enter{
 	margin-left: 0px;
-	background-color: green;
 	border-radius: 5px;
 	width: 70px;
 	height: 30px;
 	cursor: pointer;
 }
-
 #forgot{
    	text-decoration-line: none;
 		   }
