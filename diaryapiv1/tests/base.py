@@ -24,3 +24,8 @@ class BaseTestCase(unittest.TestCase):
         """Get all entry test case."""
         return self.client.get('/api/v1/entries',
                                content_type='application/json')
+
+    def get_single_entry(self, entry_id):
+        """Offer is returned here."""
+        return self.client.get('/api/v1/entries/{}'.format(entry_id),
+                               content_type='application/json')

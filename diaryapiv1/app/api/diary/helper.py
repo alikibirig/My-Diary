@@ -4,19 +4,34 @@ Puts together logic for the views.
 
 """
 
-from flask import jsonify, make_response
+from flask import jsonify, make_response, request
 
 from app.api.diary.model import ENTRIES
 
 
-def response(status, msg, code):
+def response(status, msg):
     """This is a general response message function."""
-    json_version = jsonify({"status": status, "message": msg, "code": code})
+    json_version = jsonify({"status": status, "message": msg})
     return make_response(json_version)
 
 
 def get_all_entries():
-    """Returning offers."""
+    """Returning entries."""
     success = {"status": "successfully returned"}
     json_version = jsonify({"entries": ENTRIES}, {"message": success})
     return make_response(json_version)
+
+def get_single_entry(entry_id):
+    """Return single entry."""
+    for content in ENTRIES:
+        if content['id'] == int(entry_id.strip()):
+            success = {"status": "successfully returned"}
+            json_version = jsonify({"entry": content}, {"status": success})
+            return make_response(json_version)
+    return response("Invalid", "No such entry")
+
+def store_entry():
+    """Adds an entry."""
+    data = request.get_json()
+    ENTRIES.append(data)
+    return response("success", "successfully stored")
