@@ -1,5 +1,6 @@
 
 import unittest
+import json
 from app import app
 from app.config import app_config
 
@@ -29,3 +30,8 @@ class BaseTestCase(unittest.TestCase):
         """Offer is returned here."""
         return self.client.get('/api/v1/entries/{}'.format(entry_id),
                                content_type='application/json')
+    
+    def add_entry_test(self, entry):
+        """testing entry storage."""
+        return self.client.post('/api/v1/entries', data=json.dumps(entry),
+                                content_type='application/json')
