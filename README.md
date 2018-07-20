@@ -1,5 +1,7 @@
 # My-Diary
 [![Build Status](https://travis-ci.org/alikibirig/My-Diary.svg?branch=master)](https://travis-ci.org/alikibirig/My-Diary)
+[![Coverage Status](https://coveralls.io/repos/github/alikibirig/My-Diary/badge.svg?branch=master)](https://coveralls.io/github/alikibirig/My-Diary?branch=master)
+
 MyDiary is an online journal where users can pen down their thoughts and feelings.
 Users start by opening up an account and then log into it.
 Users can add an entry and choose a category in which the entry falls.
