@@ -9,7 +9,7 @@ from flask import Blueprint
 from flask_restful import Api
 
 from app.api.diary.views import GetEntries, GetSingleEntry, AddEntry, \
-EditEntry
+    EditEntry
 
 entries = Blueprint("entries", __name__)
 

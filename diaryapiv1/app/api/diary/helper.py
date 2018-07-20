@@ -21,6 +21,7 @@ def get_all_entries():
     json_version = jsonify({"entries": ENTRIES}, {"message": success})
     return make_response(json_version)
 
+
 def get_single_entry(entry_id):
     """Return single entry."""
     for content in ENTRIES:
@@ -30,11 +31,13 @@ def get_single_entry(entry_id):
             return make_response(json_version)
     return response("Invalid", "No such entry")
 
+
 def store_entry():
     """Adds an entry."""
     data = request.get_json()
     ENTRIES.append(data)
     return response("success", "successfully stored")
+
 
 def edit_entry(entry_id):
     count = 0
@@ -45,4 +48,3 @@ def edit_entry(entry_id):
             ENTRIES.append(data)
             return response("success", "successfully edited..")
         count = count + 1
-
