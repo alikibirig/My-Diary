@@ -8,7 +8,7 @@ class ApiTestCases(BaseTestCase):
 
 
     SAMPLE_ENTRY = {
-        "id": 1006,
+        "id": 1000,
         "owner_id": 401,
         "entry_category": 2,
         "entry_date": "18/07/2018 10:30pm",
@@ -42,4 +42,12 @@ class ApiTestCases(BaseTestCase):
         with self.client:
             val = self.SAMPLE_ENTRY
             reply = self.add_entry(val)
-            self.assertEqual(reply.status_code, 200)        
+            self.assertEqual(reply.status_code, 200) 
+
+    def test_edit_entry(self):
+        """This method carries out testing for storing entries."""
+        
+        with self.client:
+            val = self.SAMPLE_ENTRY
+            reply = self.edit_entry(1000, val)
+            self.assertEqual(reply.status_code, 200)                  

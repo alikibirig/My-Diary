@@ -20,14 +20,14 @@ class GetEntries(Resource):
 class GetSingleEntry(Resource):
     """Class  getting singel entry."""
 
-    def get(self, entry_id):
+    def get(self, entryid):
         """Entry is returned here."""
         try:
-            int(entry_id)
+            int(entryid)
         except ValueError:
             return response("Invalid", "Entry does not exist")
         else:
-            return get_single_entry(entry_id)
+            return get_single_entry(entryid)
 
 
 class AddEntry(Resource):
@@ -41,6 +41,6 @@ class AddEntry(Resource):
 class EditEntry(Resource):
     """class adding an entry"""
 
-    def put(self, entry_id ):
+    def put(self, entryid ):
         """entries are returned here."""
-        return edit_entry(entry_id)    
+        return edit_entry(entryid)    

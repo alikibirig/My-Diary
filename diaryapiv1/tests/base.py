@@ -35,3 +35,8 @@ class BaseTestCase(unittest.TestCase):
         """testing entry storage."""
         return self.client.post('/api/v1/entries', data=json.dumps(entry),
                                 content_type='application/json')
+
+    def edit_entry(self, entryid, edit_info):
+        """testing entry editing."""
+        return self.client.put('/api/v1/entries/{}'.format(entryid), data=json.dumps(edit_info),
+                                content_type='application/json')
