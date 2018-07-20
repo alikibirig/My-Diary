@@ -4,7 +4,7 @@ from flask import Flask, request
 from flask_restful import Resource
 
 from app.api.diary.helper import get_all_entries, get_single_entry, response, \
-store_entry
+store_entry, edit_entry
 
 app = Flask(__name__)
 
@@ -36,3 +36,11 @@ class AddEntry(Resource):
     def post(self):
         """entries are returned here."""
         return store_entry()    
+
+
+class EditEntry(Resource):
+    """class adding an entry"""
+
+    def put(self, entry_id ):
+        """entries are returned here."""
+        return edit_entry(entry_id)    

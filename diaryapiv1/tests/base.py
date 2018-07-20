@@ -31,7 +31,7 @@ class BaseTestCase(unittest.TestCase):
         return self.client.get('/api/v1/entries/{}'.format(entry_id),
                                content_type='application/json')
     
-    def add_entry_test(self, entry):
+    def add_entry(self, entry):
         """testing entry storage."""
         return self.client.post('/api/v1/entries', data=json.dumps(entry),
                                 content_type='application/json')

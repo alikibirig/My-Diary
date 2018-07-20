@@ -35,3 +35,14 @@ def store_entry():
     data = request.get_json()
     ENTRIES.append(data)
     return response("success", "successfully stored")
+
+def edit_entry(entry_id):
+    count = 0
+    data = request.get_json()
+    for cont in ENTRIES:
+        if cont['id'] == int(entry_id.strip()):
+            del ENTRIES[count]
+            ENTRIES.append(data)
+            return response("success", "successfully edited..")
+        count = count + 1
+
