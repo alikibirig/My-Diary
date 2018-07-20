@@ -28,7 +28,6 @@ Flask-SQLAlchemy==2.3.2
 Flask-Test==0.1.6
 Flask-Testing==0.7.1
 funcsigs==1.0.2
-futures==3.2.0
 gunicorn==19.8.1
 idna==2.7
 ipaddress==1.0.22
