@@ -23,20 +23,20 @@ class ApiTestCases(BaseTestCase):
             self.assertEqual(reply.status_code, 200)
 
     def test_single_entry(self):
-        """This method carries out testing for all entries."""
+        """This method carries out testing for a single entry."""
 
         with self.client:
             reply = self.get_single_entry(1000)
             self.assertEqual(reply.status_code, 200)        
 
     def test_single_invalid_entry(self):
-        """This method carries out testing for all entries."""
+        """This method carries out testing for a single invalid entry."""
 
         with self.client:
             reply = self.get_single_entry("16")
             self.assertEqual(reply.status_code, 200)                
 
-    def test_creat_entry(self):
+    def test_create_entry(self):
         """This method carries out testing for storing entries."""
 
         with self.client:
@@ -45,7 +45,7 @@ class ApiTestCases(BaseTestCase):
             self.assertEqual(reply.status_code, 200) 
 
     def test_edit_entry(self):
-        """This method carries out testing for storing entries."""
+        """This method carries out testing for editing entries."""
         
         with self.client:
             val = self.SAMPLE_ENTRY
