@@ -11,13 +11,11 @@
 	color:red; 
 	font-size: 3rem;
 }
-body{
-	background-color: lightblue;
-}
+body{background-color: lightblue;}
 #picture{
 	width: 300px;
 	height: 300px;
-	background-image: url(diary.png);
+	background-image: url(E:/ANDELA/My-Diary/UI/IMAGES/diary.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -28,7 +26,7 @@ body{
 #text-area{
 	width: 700px;
 	height: 600px;
-	background-color: lightcyan;
+	background-color: inherit;
 	position: absolute;
 	margin-left: 0px;
 	margin-top: 250px;
@@ -46,6 +44,11 @@ body{
 	font-style: italic;
 	font-weight: 10px;
 }
+#entry0{
+	margin-left: 1000px;
+	margin-top: -10px;
+	position: absolute;
+}
 #entry1{
 	margin-left: 1120px;
 	margin-top: -10px;
@@ -59,6 +62,20 @@ body{
 .entries{
 	width: 100px;
 	height: 40px;
+}
+#content{
+	width: 100px;
+	height: 200px;
+	display: none;
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 0px;
+	background-color: lightcyan;
+	text-indent: 10px;
+
+}
+#content a{
+	text-decoration: none;
 }
 #content1{
 	width: 100px;
@@ -106,7 +123,7 @@ body{
 }
 #textcontent{
 	margin-left: 10px;
-	margin-top: 0px;
+	margin-top: 20px;
 	width: 250px;
 	height:30px;
 }
@@ -116,25 +133,36 @@ body{
 	width: auto;
 	height:auto;
 	position: absolute;
+
 }
 #textareacontent{
 	margin-left: 70px;
 	margin-top: 20px;
 	width: 500px;
-	height:350px;
+	height:400px;
 	position: absolute;
 	border-radius: 10px;
 }
 input{
 	width: 100%;
+
 }
 #save{
-	margin-top: 400px;
+	margin-top: 460px;
 	margin-left: 500px;
 	width: 80px;
 	height: 40px;
 }
-#category{
-	font-size: 2rem;
-	margin-left: 10px;
+#mainbutton{
+	width: 100px;
+	height:40px;
+	margin-left: 880px;
+	margin-top: -10px;
+	position: absolute;
+}
+#note{
+	font-size: 5rem;
+	color: red;
+	font-style: italic;
+	text-align: center;
 }

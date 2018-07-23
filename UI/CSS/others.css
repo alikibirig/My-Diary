@@ -15,7 +15,7 @@ body{background-color: lightblue;}
 #picture{
 	width: 300px;
 	height: 300px;
-	background-image: url(diary.png);
+	background-image: url(E:/ANDELA/My-Diary/UI/IMAGES/diary.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -44,11 +44,7 @@ body{background-color: lightblue;}
 	font-style: italic;
 	font-weight: 10px;
 }
-#entry0{
-	margin-left: 1000px;
-	margin-top: -10px;
-	position: absolute;
-}
+
 #entry1{
 	margin-left: 1120px;
 	margin-top: -10px;
@@ -63,19 +59,7 @@ body{background-color: lightblue;}
 	width: 100px;
 	height: 40px;
 }
-#content{
-	width: 100px;
-	height: 200px;
-	display: none;
-	position: absolute;
-	margin-left: 0px;
-	margin-top: 0px;
-	background-color: lightcyan;
-	text-indent: 10px;
 
-}
-#content a{
-	text-decoration: none;
 }
 #content1{
 	width: 100px;
@@ -103,13 +87,13 @@ body{background-color: lightblue;}
 #content2 a{
 	text-decoration: none;
 }
-#entry0:hover
-#content{
-	display: block;
-}#entry1:hover
+
+}
+#entry1:hover
 #content1{
 	display: block;
-}#entry2:hover
+}
+#entry2:hover
 #content2{
 	display: block;
 }
